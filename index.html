@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=" viewport" content= "width=device-width, initial scale=1.0">
+    <title>Docment</title>
+</head>
+<body>
+    <h3>index=Loopstask</h3>
+    </body>
+    <script>
+
+//Function wthout parameter.
+// Function named greet that prints "Hello, World!" to the console
+    function greet() {
+    console.log("Hello, World!");
+}
+
+// Call the greet function
+greet();
+
+//function wth parameter.
+
+// Function named addNumbers that takes two parameters, a and b
+function addNumbers(a, b) {
+    console.log(a + b);
+}
+
+// Call the addNumbers function with different sets of numbers
+addNumbers(5, 10);   
+addNumbers(20, 30);  
+addNumbers(7, 8);    
+
+//Functions return stmnts.
+// Function named multiply that takes two parameters, x and y
+function multiply(x, y) {
+    return x * y;
+}
+
+// Store the returned value in a variable and print it to the console
+let product = multiply(5, 5);
+console.log(product); 
+
+//Combination functions.
+
+// Write a function named calculateRectangleArea that takes two parameters, length and width.
+function calculateRectangleArea(length, width) {
+// Inside the function, use the multiply function from the previous task to calculate the area of the rectangle and return the result.
+    return multiply(length, width);
+}
+
+// Call the calculateRectangleArea function and print the result to the console.
+let area = calculateRectangleArea(10, 20);
+console.log(area);
+
+//Default parameters.
+
+// Write a function named greetUser that takes one parameter, name, with a default value of "Guest".
+function greetUser(name = "Guest") {
+    // Inside the function, print a message saying "Hello, [name]!".
+    console.log('Hello, ${name}!');
+}
+
+// Call the greetUser function with and without passing an argument to demonstrate the default parameter functionality.
+greetUser("Sri");
+greetUser();
+
+</script>
+</html>
